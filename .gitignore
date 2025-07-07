@@ -43,3 +43,23 @@
 #
 *.dSYM
 .vscode/
+
+# Ignorar ejecutables en Linux/macOS (sin extensión)
+main
+programa
+*.out
+
+# Ignorar ejecutables en Windows
+*.exe
+
+# Ignorar archivos de objetos (compilación intermedia)
+*.o
+*.obj
+
+# Archivos de respaldo de algunos editores
+*~
+*.bak
+
+# Archivos temporales
+*.tmp
+*.log

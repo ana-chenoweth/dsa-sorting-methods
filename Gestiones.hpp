@@ -1,0 +1,6 @@
+#ifndef GESTIONES_HPP_INCLUDED
+#define GESTIONES_HPP_INCLUDED
+
+void GestionBurbuja();
+
+#endif // GESTIONES_HPP_INCLUDED

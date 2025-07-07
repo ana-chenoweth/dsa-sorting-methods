@@ -1,0 +1,11 @@
+#ifndef MENU_HPP_INCLUDED
+#define MENU_HPP_INCLUDED
+
+#include <iostream>
+
+// MENU opciones
+enum { SALIR, BURBUJA, SELECCION, INSERCION, SHELLSORT, QUICKSORT, MERGESORT };
+
+int Menu();
+
+#endif // MENU_HPP_INCLUDED

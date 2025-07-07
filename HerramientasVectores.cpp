@@ -10,7 +10,7 @@ void Imprimir(const int a[], int n, int inicio, int fin, int mayor)
         for (int i = 0; i < mayor; ++i) {
             MoverCursor(j, i + 3);
             if (a[j] >= (mayor - i)) {
-                cout << "│";
+                cout << "║";
             } else {
                 cout << " ";
             }

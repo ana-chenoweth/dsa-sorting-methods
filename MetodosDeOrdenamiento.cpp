@@ -2,8 +2,8 @@
 #include "HerramientasVectores.hpp"
 #include "MetodosDeOrdenamiento.hpp"
 #include <iostream>
-#include <thread>       // para sleep
-#include <chrono>       // para sleep
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
@@ -40,5 +40,33 @@ void Burbuja(int v[], int n, int velocidadanimacion, int mayor)
         if (estaOrdenado) break;
     }
 
+    CambiarCursor(ENCENDIDO, NORMAL);
+}
+//************************************************
+void Seleccion(int v[], int n, int velocidadanimacion, int mayor)
+{
+
+    MoverCursor(0, mayor+4);
+    cout << "Ordenando...                         " << endl;
+
+    CambiarCursor(APAGADO, NORMAL);
+
+    int minimo;
+
+    for(int i = 0; i < n - 1; i++){
+        minimo = i;
+        for(int j = i + 1; j < n; j++){
+            if(v[j] < v[minimo]){
+                minimo = j;
+            }
+        }
+        if(minimo != i){
+            Intercambiar(v[i], v[minimo]);
+            Imprimir(v,n, i, minimo, mayor);
+            if(velocidadanimacion!=0) {
+                std::this_thread::sleep_for(std::chrono::milliseconds(velocidadanimacion));
+            }
+        }
+    }
     CambiarCursor(ENCENDIDO, NORMAL);
 }

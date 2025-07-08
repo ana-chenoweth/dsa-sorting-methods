@@ -70,3 +70,34 @@ void Seleccion(int v[], int n, int velocidadanimacion, int mayor)
     }
     CambiarCursor(ENCENDIDO, NORMAL);
 }
+//************************************************
+void Insercion(int v[], int n, int velocidadanimacion, int mayor)
+{
+
+    MoverCursor(0, mayor+4);
+    cout << "Ordenando...                         " << endl;
+
+    CambiarCursor(APAGADO, NORMAL);
+    int posAct, valorPos;
+
+    for(int i = 1; i < n; i++){
+
+        int valorPos = v[i];
+        int posAct = i - 1;
+
+        while(posAct >= 0 && v[posAct] > valorPos){
+            v[posAct + 1] = v[posAct];
+            posAct--;
+            Imprimir(v,n, posAct+1, posAct+2, mayor);
+            if(velocidadanimacion!=0){
+                std::this_thread::sleep_for(std::chrono::milliseconds(velocidadanimacion));
+            }
+        }
+        v[posAct + 1] = valorPos;
+        Imprimir(v,n, posAct, posAct+1, mayor);
+        if(velocidadanimacion!=0){
+            std::this_thread::sleep_for(std::chrono::milliseconds(velocidadanimacion));
+        }
+    }
+    CambiarCursor(ENCENDIDO, NORMAL);
+}

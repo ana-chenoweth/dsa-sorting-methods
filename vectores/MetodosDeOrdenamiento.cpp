@@ -133,3 +133,38 @@ void ShellSort(int v[], int n, int velocidadanimacion, int mayor)
 
     CambiarCursor(ENCENDIDO, NORMAL);
 }
+//************************************************
+void QuickSort(int v[], int n, int velocidadanimacion, int izq, int der, int mayor)
+{
+
+    MoverCursor(0, mayor+4);
+    cout << "Ordenando...                         " << endl;
+
+    CambiarCursor(APAGADO, NORMAL);
+    int i = izq, j = der, tmp;
+    int p = v[(izq+der) / 2];
+
+    while(i<= j)
+    {
+        while(v[i] < p) i++;
+        while(v[j] > p) j--;
+        if(i<= j)
+        {
+            tmp = v[i];
+            v[i] = v[j];
+            v[j] = tmp;
+            Imprimir(v,n, i, j, mayor);
+            i++;
+            j--;
+
+            if(velocidadanimacion!=0){
+                std::this_thread::sleep_for(std::chrono::milliseconds(velocidadanimacion));
+            }
+        }
+    }
+    if(izq < j) QuickSort(v, n, velocidadanimacion, izq, j, mayor);
+    if(i < der) QuickSort(v, n, velocidadanimacion, i, der, mayor);
+
+    CambiarCursor(ENCENDIDO, NORMAL);
+}
+//************************************************

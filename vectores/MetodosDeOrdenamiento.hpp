@@ -8,5 +8,6 @@ void Burbuja(int v[], int n, int velocidadanimacion, int mayor);
 void Seleccion(int v[], int n, int velocidadanimacion, int mayor);
 void Insercion(int v[], int n, int velocidadanimacion, int mayor);
 void ShellSort(int v[], int n, int velocidadanimacion, int mayor);
+void QuickSort(int v[], int n, int velocidadanimacion, int izq, int der, int mayor);
 
 #endif // METODOSDEORDENAMIENTO_HPP_INCLUDED

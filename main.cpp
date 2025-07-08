@@ -50,7 +50,7 @@ int main()
             case MERGESORT:
                 system("clear");
                 cout << "Mezcla (Merge Sort)  ..." << endl;
-
+                GestionMergeSort();
                 break;
         }
 

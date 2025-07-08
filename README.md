@@ -7,4 +7,4 @@ Academic Project contains various sorting algorithms in C++, including Bubble So
 <p align="center"><img src="img/selection.gif" alt="Selection Sort"></p>
 <p align="center"><img src="img/shell_sort.gif" alt="Shell Sort"></p>
 <p align="center"><img src="img/insertion_sort.gif" alt="Insertion Sort"></p>
-<p align="center"><img src="img/bubble-sort.gif" alt="Bubble Sort"></p>
+<p align="center"><img src="img/bubble_sort.gif" alt="Bubble Sort"></p>

@@ -6,5 +6,6 @@ void GestionSeleccion();
 void GestionInsercion();
 void GestionShellSort();
 void GestionQuickSort();
+void GestionMergeSort();
 
 #endif // GESTIONES_HPP_INCLUDED

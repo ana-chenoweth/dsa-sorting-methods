@@ -3,5 +3,6 @@
 
 void GestionBurbuja();
 void GestionSeleccion();
+void GestionInsercion();
 
 #endif // GESTIONES_HPP_INCLUDED

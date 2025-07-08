@@ -35,7 +35,7 @@ int main()
             case INSERCION:
                 system("clear");
                 cout << "Inserción..." << endl;
-
+                GestionInsercion();
                 break;
             case SHELLSORT:
                 system("clear");

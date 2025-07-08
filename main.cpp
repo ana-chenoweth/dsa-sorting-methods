@@ -30,7 +30,7 @@ int main()
             case SELECCION:
                 system("clear");
                 cout << "Selección..." << endl;
-
+                GestionSeleccion();
                 break;
             case INSERCION:
                 system("clear");

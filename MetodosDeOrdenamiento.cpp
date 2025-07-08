@@ -101,3 +101,35 @@ void Insercion(int v[], int n, int velocidadanimacion, int mayor)
     }
     CambiarCursor(ENCENDIDO, NORMAL);
 }
+//************************************************
+void ShellSort(int v[], int n, int velocidadanimacion, int mayor)
+{
+
+    MoverCursor(0, mayor+4);
+    cout << "Ordenando...                         " << endl;
+
+    CambiarCursor(APAGADO, NORMAL);
+    int brecha = n / 2;
+        while (brecha > 0) {
+            bool recorrer = false;
+            for (int i = brecha; i < n; i++) {
+                int temp = v[i];
+                int j = i;
+                while (j >= brecha && v[j - brecha] > temp) {
+                    v[j] = v[j - brecha];
+                    j -= brecha;
+                    recorrer = true;
+                }
+                v[j] = temp;
+                if (recorrer) {
+                Imprimir(v, n, j, i, mayor);
+                if (velocidadanimacion != 0){
+                    std::this_thread::sleep_for(std::chrono::milliseconds(velocidadanimacion));
+                }
+            }
+            }
+            brecha /= 2;
+        }
+
+    CambiarCursor(ENCENDIDO, NORMAL);
+}

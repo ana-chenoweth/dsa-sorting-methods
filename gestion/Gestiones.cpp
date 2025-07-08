@@ -1,8 +1,8 @@
 #include "HerramientasGestion.hpp"
-#include "HerramientasVectores.hpp"
+#include "../vectores/HerramientasVectores.hpp"
 #include "Gestiones.hpp"
-#include "MetodosDeOrdenamiento.hpp"
-#include "Utileria.hpp"
+#include "../vectores/MetodosDeOrdenamiento.hpp"
+#include "../utils/Utileria.hpp"
 
 #include <iostream>
 #include <cstdlib>  // para system("clear")

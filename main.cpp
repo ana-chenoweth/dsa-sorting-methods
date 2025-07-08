@@ -1,9 +1,9 @@
-#include "Gestiones.hpp"
-#include "Utileria.hpp"
-#include "HerramientasGestion.hpp"
-#include "HerramientasVectores.hpp"
-#include "MetodosDeOrdenamiento.hpp"
-#include "Menu.hpp"
+#include "gestion/Gestiones.hpp"
+#include "utils/Utileria.hpp"
+#include "gestion/HerramientasGestion.hpp"
+#include "vectores/HerramientasVectores.hpp"
+#include "vectores/MetodosDeOrdenamiento.hpp"
+#include "utils/Menu.hpp"
 #include <cstdlib>
 #include <iostream>
 

@@ -144,3 +144,36 @@ void GestionShellSort()
     cout << "Ocurrio\242 un error inesperado" << endl;
 }
 }
+//*************************************************
+void GestionQuickSort()
+{
+    int *v = NULL;
+    int dim;
+
+    dim = DimesionVector("Arreglo: ");
+
+    try{
+    v = Crear(dim);
+
+    AzarOCapturar(v, dim);
+
+    int velocidadanimacion = Velocidad();
+    int mayor = MayorArreglo(v, dim);
+
+    system("cls");
+    cout << " >> ORDENAMIENTO QUICK SORT";
+    Imprimir(v,dim, 0, dim-1, mayor);
+    cout << endl << endl;
+    cout << "Proceso de ordenamiento en breve..." << endl;
+
+    QuickSort(v, dim, velocidadanimacion, 0, dim-1, mayor);
+
+    cout << endl << endl << "Fin del ordenamiento " << endl;
+    Destruir(v);
+
+    }catch(const bad_alloc &){
+    cout << "Error en la asignaci\242n de memoria" <<endl;
+} catch(...){
+    cout << "Ocurrio\242 un error inesperado" << endl;
+}
+}

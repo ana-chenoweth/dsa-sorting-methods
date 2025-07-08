@@ -40,12 +40,12 @@ int main()
             case SHELLSORT:
                 system("clear");
                 cout << "Inserción con intervalos decrecientes (Shell Sort) ..." << endl;
-
+                GestionShellSort();
                 break;
             case QUICKSORT:
                 system("clear");
                 cout << "Rápido (Quick Sort) ..." << endl;
-
+                GestionQuickSort();
                 break;
             case MERGESORT:
                 system("clear");

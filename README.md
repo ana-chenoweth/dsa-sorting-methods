@@ -15,6 +15,11 @@ Each algorithm is animated in real time within the terminal to help students and
 
 ## Visual Previews
 
+![Menu](img/menu.png)
+![Opciones](img/options.png)
+
+### Algorithms
+
 <p align="center">
   <img src="img/merge_sort.gif" alt="Merge Sort" width="300">
   <img src="img/quick_sort.gif" alt="Quick Sort" width="300">
@@ -66,7 +71,7 @@ sudo apt install build-essential
 
 ---
 
-## 🚀 Setup & Usage
+## Setup & Usage
 
 1. Clone the repository:
 
@@ -95,7 +100,7 @@ clang++ -std=c++17 -stdlib=libc++ -g \
 ./programa
 ```
 
-📝 **Note**: For a smoother experience, make sure your terminal uses a real monospaced font (e.g., Menlo) and is wide enough for the sorting bars to render properly.
+**Note**: For a smoother experience, make sure your terminal uses a real monospaced font (e.g., Menlo) and is wide enough for the sorting bars to render properly.
 
 ---
 
@@ -116,7 +121,7 @@ You can click in the executable to run it.
 
 ---
 
-## 🪪 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 

@@ -15,18 +15,24 @@ Each algorithm is animated in real time within the terminal to help students and
 
 ## Visual Previews
 
-![Menu](img/menu.png)
-![Opciones](img/options.png)
+![Menu](img/)
+![Opciones](img/)
+
+<p align="center">
+  <img src="img/menu.png" alt="Menu" width="400">
+  <img src="img/options.png" alt="Options" width="400">
+</p>
+
 
 ### Algorithms
 
 <p align="center">
-  <img src="img/merge_sort.gif" alt="Merge Sort" width="300">
-  <img src="img/quick_sort.gif" alt="Quick Sort" width="300">
-  <img src="img/selection.gif" alt="Selection Sort" width="300"><br>
-  <img src="img/shell_sort.gif" alt="Shell Sort" width="300">
-  <img src="img/insertion_sort.gif" alt="Insertion Sort" width="300">
-  <img src="img/bubble_sort.gif" alt="Bubble Sort" width="300">
+  <img src="img/merge_sort.gif" alt="Merge Sort" width="400">
+  <img src="img/quick_sort.gif" alt="Quick Sort" width="400">
+  <img src="img/selection.gif" alt="Selection Sort" width="400"><br>
+  <img src="img/shell_sort.gif" alt="Shell Sort" width="400">
+  <img src="img/insertion_sort.gif" alt="Insertion Sort" width="400">
+  <img src="img/bubble_sort.gif" alt="Bubble Sort" width="400">
 </p>
 
 ---

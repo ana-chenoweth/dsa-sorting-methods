@@ -14,13 +14,9 @@ Each algorithm is animated in real time within the terminal to help students and
 ---
 
 ## Visual Previews
-
-![Menu](img/)
-![Opciones](img/)
-
 <p align="center">
-  <img src="img/menu.png" alt="Menu" width="400">
-  <img src="img/options.png" alt="Options" width="400">
+    <img src="img/options.png" alt="Options" width="400">
+    <img src="img/menu.png" alt="Menu" width="400">
 </p>
 
 
